@@ -16,7 +16,7 @@
   --line-soft: #ece7db;
   --accent:    #1f5f54;
   --accent-2:  #2f7d6e;
-  --accent-bg: #e7efe9;
+  --accent-bg: #e7efe9;section
   --shadow:    0 1px 2px rgba(27,26,23,.04), 0 12px 32px -16px rgba(27,26,23,.18);
   --shadow-lg: 0 2px 4px rgba(27,26,23,.05), 0 30px 60px -24px rgba(27,26,23,.28);
 
@@ -76,7 +76,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; line-height
 /* ---------- Layout helpers ---------- */
 .container { width: min(var(--maxw), 92vw); margin-inline: auto; }
 
-.section { padding-block: clamp(3.5rem, 7vw, 6rem); scroll-margin-top: 92px; border-top: 1px solid var(--line-soft); }
+.section { padding-block: clamp(2rem, 4vw, 3.5rem); scroll-margin-top: 92px; border-top: 1px solid var(--line-soft); }
 .section:first-of-type { border-top: none; }
 
 .kicker {
