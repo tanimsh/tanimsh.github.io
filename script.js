@@ -92,6 +92,7 @@
     const mYear = modal.querySelector('#modal-year');
     const mImg = modal.querySelector('#modal-img');
     const mDesc = modal.querySelector('#modal-desc');
+    const mPaper = modal.querySelector('#modal-paper');
     const mClose = modal.querySelector('#modal-close');
 
     function open(data) {
@@ -102,6 +103,15 @@
         mImg.onerror = function () { mImg.style.display = 'none'; };
       } else { mImg.style.display = 'none'; }
       mDesc.textContent = data.desc || '';
+      if (mPaper) {
+        if (data.paperUrl && data.paperUrl !== '#') {
+          mPaper.href = data.paperUrl;
+          mPaper.textContent = data.paperTitle || 'View paper';
+          mPaper.style.display = '';
+        } else {
+          mPaper.style.display = 'none';
+        }
+      }
       modal.setAttribute('data-open', '');
       document.body.style.overflow = 'hidden';
     }
